@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       versionName:
-        description: "this cersion name for github workflow"
+        description: "this version name for github workflow"
         required: true
 
   push:
@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: before checkout action 
+        if: GITHUB_REF == "refs/head/feature"
         run: ls 
         shell: bash 
 
