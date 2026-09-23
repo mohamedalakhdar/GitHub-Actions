@@ -1,6 +1,12 @@
 name: first workflow
 
 on: 
+  workflow_dispactch:
+    inputs:
+      versionName:
+        description: "this cersion name for github workflow"
+        required: true
+        
   push:
     branches:
       - "main"
