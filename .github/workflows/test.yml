@@ -1,11 +1,11 @@
 name: first workflow
 
 on: 
-  workflow_dispatch:
-    inputs:
-      versionName:
-        description: "this version name for github workflow"
-        required: true
+  # workflow_dispatch:
+  #   inputs:
+  #     versionName:
+  #       description: "this version name for github workflow"
+  #       required: true
 
   push:
     # branches:
