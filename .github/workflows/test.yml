@@ -7,9 +7,9 @@ on:
   #       description: "this version name for github workflow"
   #       required: true
 
-  push
-    # branches:
-    #   - "main"
+  push:
+    branches:
+      - "main"
 
 jobs:
   first_workflow_job:
@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: before checkout action 
-        if: GITHUB_REF == "refs/head/feature"
+        if: github.ref == "refs/heads/feature"
         run: ls 
         shell: bash 
 
