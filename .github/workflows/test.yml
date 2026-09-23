@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: before checkout action 
-        if: GITHUB_REF == 'refs/heads/feature'
+        if: github.ref == 'refs/heads/feature'
         run: ls 
         shell: bash 
 
