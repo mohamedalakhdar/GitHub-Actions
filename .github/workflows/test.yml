@@ -18,6 +18,8 @@ jobs:
     container:
       image: node:latest
     steps:
+      - name: check node version
+        run: node -v  
       - name: before checkout action 
         if: github.ref == 'refs/heads/feature'
         run: ls 
