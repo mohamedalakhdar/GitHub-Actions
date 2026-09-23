@@ -1,0 +1,16 @@
+name: first workflow 
+
+on: 
+  push:
+    branches:
+      - "main"
+
+jobs:
+  first_workflow_job:
+    name: first jobs
+    runs-on: ubuntu-latest
+    steps:
+      - name: first step 
+        run: ls 
+        shell: bash 
+        
