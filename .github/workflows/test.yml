@@ -26,7 +26,7 @@ jobs:
 
       - name: after checkout action
 
-        if: github.event.inputs.versionName == "test"
+        if: github.event.inputs.versionName == 'test'
         run: ls     
 
 
