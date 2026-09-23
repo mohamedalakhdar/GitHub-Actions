@@ -7,9 +7,9 @@ on:
   #       description: "this version name for github workflow"
   #       required: true
 
-  push:
-    branches:
-      - "main"
+  # push:
+  #   branches:
+  #     - "main"
 
 jobs:
   first_workflow_job:
@@ -25,6 +25,8 @@ jobs:
         uses: actions/checkout@v3
 
       - name: after checkout action
+
+        if: github.event.inputs.versionName == 'test'
         run: ls     
 
 
