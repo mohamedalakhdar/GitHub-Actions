@@ -7,7 +7,7 @@ on:
   #       description: "this version name for github workflow"
   #       required: true
 
-  push:
+  push
     # branches:
     #   - "main"
 
