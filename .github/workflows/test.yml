@@ -8,8 +8,8 @@ on:
         required: true
 
   push:
-    branches:
-      - "main"
+    # branches:
+    #   - "main"
 
 jobs:
   first_workflow_job:
